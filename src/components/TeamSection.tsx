@@ -6,7 +6,7 @@ const teamMembers = [
     name: "Dr. Rafael Sol",
     role: "Presidente",
     description: "Doutora em Ciência da Computação com mais de 15 anos de experiência em IA e Machine Learning.",
-    image: "./imageequipe/IEEE-1-2.png",
+    image: "/imageequipe/IEEE-1-2.png",
     linkedin: "https://www.linkedin.com/in/rafael-sol-dos-santos/",
     email: "rafael.sol@example.com"
   },
