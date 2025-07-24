@@ -10,8 +10,8 @@ const MissionSection = () => {
           <div className="order-2 lg:order-1">
             <Card className="overflow-hidden shadow-ieee">
               <img 
-                src={ieeeHeroImage} 
-                alt="Profissional trabalhando"
+                src="/imageequipe/teste1.png"
+                alt="Logo"
                 className="w-full h-96 object-cover"
               />
             </Card>

@@ -81,7 +81,7 @@ const JoinSection = () => {
           <div>
             <Card className="overflow-hidden shadow-ieee">
               <img 
-                src={ieeeChapterImage}
+                src="/imageequipe/IEEE.png"
                 alt="Equipe IEEE trabalhando em colaboração"
                 className="w-full h-96 object-cover"
               />

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Calendar, Award } from "lucide-react";
+import { ArrowRight, Users, FileText, Award } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -13,7 +13,6 @@ const HeroSection = () => {
             Conectando profissionais de tecnologia e estudantes através de conhecimento, 
             networking e oportunidades de crescimento na área de computação e engenharia.
           </p>
-          
 
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -21,15 +20,15 @@ const HeroSection = () => {
               <div className="flex justify-center mb-3">
                 <Users className="h-8 w-8" />
               </div>
-              <div className="text-3xl font-bold mb-1">500+</div>
-              <div className="text-sm opacity-80">Membros Ativos</div>
+              <div className="text-3xl font-bold mb-1">375k+</div>
+              <div className="text-sm opacity-80">Comunidades</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-3">
-                <Calendar className="h-8 w-8" />
+                <FileText className="h-8 w-8" />
               </div>
-              <div className="text-3xl font-bold mb-1">50+</div>
-              <div className="text-sm opacity-80">Eventos Realizados</div>
+              <div className="text-3xl font-bold mb-1">926k+</div>
+              <div className="text-sm opacity-80">Artigos da Biblioteca Digital</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-3">
