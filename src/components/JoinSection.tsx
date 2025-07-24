@@ -11,9 +11,9 @@ const benefits = [
 ];
 
 const stats = [
-  { number: "500+", label: "Membros Ativos" },
-  { number: "50+", label: "Eventos por Ano" },
-  { number: "95%", label: "Satisfação dos Membros" }
+  { number: "375.000+", label: "Membros Ativos" },
+  { number: "4,118+", label: "Eventos técnicos e de networking" },
+  { number: "1.031+", label: "Capítulos representando 157 países" }
 ];
 
 const JoinSection = () => {
@@ -62,7 +62,7 @@ const JoinSection = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90"
-                onClick={() => window.open('https://www.computer.org/membership', '_blank')}
+                onClick={() => window.open('https://www.computer.org/membership/join', '_blank')}
               >
                 Tornar-se Membro
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -70,7 +70,7 @@ const JoinSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => window.open('https://www.computer.org/', '_blank')}
+                onClick={() => window.open('https://www.computer.org/membership', '_blank')}
               >
                 Saiba Mais
               </Button>
