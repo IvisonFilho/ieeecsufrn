@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Description } from "@radix-ui/react-toast";
 import { Linkedin, Mail } from "lucide-react";
 
 const teamMembers = [
@@ -34,6 +35,14 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/victorbxavier/",
     email: "victor.xavier@example.com"
   },
+  {
+    name:"Dra. Rafaela",
+    role: "Webmaster",
+    Description:"Pesquisadora em webdesign e mestre em computação quântica",
+    image:"",
+    linkedin:"",
+    email:""
+  }
 ];
 
 const TeamSection = () => {
