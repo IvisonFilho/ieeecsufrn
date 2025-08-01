@@ -58,10 +58,10 @@ const JoinSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start md:ml-20">
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90"
+                className="text-lg px-6 py-3 bg-white text-primary font-semibold border border-primary shadow-md hover:bg-gray-100 hover:scale-105 hover:shadow-xl transition-all duration-200"
                 onClick={() => window.open('https://www.computer.org/membership/join', '_blank')}
               >
                 Tornar-se Membro
@@ -70,6 +70,7 @@ const JoinSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
+                className="text-lg px-6 py-3 bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent transition-colors duration-300 hover:scale-105 transition-all duration-200"
                 onClick={() => window.open('https://www.computer.org/membership', '_blank')}
               >
                 Saiba Mais

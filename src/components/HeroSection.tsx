@@ -18,15 +18,15 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start md:ml-20">
             <Button
               size="lg"
-              className="text-lg px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300"
+              className="text-lg px-6 py-3 bg-white text-primary font-semibold border border-primary shadow-md hover:bg-gray-100 hover:scale-105 hover:shadow-xl transition-all duration-200"
             >
               Junte-se a nós →
             </Button>
 
+
             <Button
-              variant="outline"
               size="lg"
-              className="text-lg px-6 py-3 text-black border-black bg-white hover:bg-neutral-800 hover:text-white transition-colors duration-300"
+              className="text-lg px-6 py-3 bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent transition-colors duration-300 hover:scale-105 transition-all duration-200"
             >
               Ver atividades
             </Button>
