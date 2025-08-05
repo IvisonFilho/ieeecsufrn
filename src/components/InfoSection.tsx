@@ -1,6 +1,8 @@
+import { MembershipChart } from "@/components/MembershipChart"; // ajuste o caminho conforme sua estrutura
+
 const InfoSection = () => {
   return (
-    <section id="benefits" className="py-20 bg-gradient-primary text-primary-foreground">
+    <section id="benefits" className="py-20 bg-[#0d0d0d] text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-12">
 
@@ -43,18 +45,14 @@ const InfoSection = () => {
               Faça parte de uma comunidade vibrante que inclui estudantes, profissionais
               experientes, pesquisadores e líderes de empresas. Participe de eventos
               exclusivos, grupos de interesse especial e fóruns de discussão onde você
-              pode compartilhar conhecimento e criar conexões valiosas.
+              pode compartilhar conhecimento e criar conexões valiosas. Segue o Crescimento de 
+              membros nos últimos meses, refletindo o aumento do interesse e participação na IEEE Computer Society:
             </p>
 
             <div className="mt-8 flex flex-col items-center bg-primary-foreground/20 rounded-xl p-8">
-              <img
-                src="/imageinfo/ConferenciaEventos.png"
-                alt="Informações e estatísticas da nossa comunidade em 2024"
-                className="w-[300px] h-auto rounded-xl shadow-lg"
-              />
-              <p className="mt-4 text-base opacity-80 text-center">
-                Resumo de Atividades da Comunidade em 2024
-              </p>
+              <div className="mt-8 w-full">
+                <MembershipChart />
+              </div>
             </div>
 
 

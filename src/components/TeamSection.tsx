@@ -36,12 +36,12 @@ const teamMembers = [
     email: "victor.xavier@example.com"
   },
   {
-    name:"Dra. Rafaela",
+    name:"Dra. Rafaela Santos",
     role: "Webmaster",
     Description:"Pesquisadora em webdesign e mestre em computação quântica",
-    image:"",
-    linkedin:"",
-    email:""
+    image:"./imageequipe/IEEE-5.png",
+    linkedin:"https://www.linkedin.com/in/rafaela-marques-82515722b/",
+    email:"rafaela.santos@example.com"
   }
 ];
 

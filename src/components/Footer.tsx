@@ -3,11 +3,12 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Youtube } from "lucid
 const Footer = () => {
   return (
     <footer id="contact" className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-6 py-12">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12">
           
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <a 
                 href="/" 
@@ -26,9 +27,9 @@ const Footer = () => {
             </p>
             
             {/* Social Media */}
-            <div className="flex space-x-3 pt-4">
+            <div className="flex space-x-6 pt-4">
               <a 
-                href="https://linkedin.com/company/ieee-computer-society" 
+                href="https://www.linkedin.com/company/csufrn/posts/?feedView=all" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-primary-foreground/10 transition-colors"
@@ -67,7 +68,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             <h3 className="font-semibold text-lg">Links Rápidos</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -145,7 +146,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services 
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Serviços</h3>
             <ul className="space-y-2 text-sm">
@@ -155,10 +156,10 @@ const Footer = () => {
               <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Networking</a></li>
               <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Publicações</a></li>
             </ul>
-          </div>
+          </div>*/}
 
           {/* Contact */}
-          <div className="space-y-4">
+          <div className="space-y-6 ">
             <h3 className="font-semibold text-lg">Contato</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2">
@@ -176,9 +177,10 @@ const Footer = () => {
                   href="tel:+5511999999999"
                   className="opacity-90 hover:opacity-100 transition-opacity"
                 >
-                  +55 (11) 9999-9999
+                  (714) 821-8380
                 </a>
               </div>
+              {/*
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 opacity-75 mt-0.5" />
                 <span className="opacity-90">
@@ -186,25 +188,20 @@ const Footer = () => {
                   São Paulo, SP - 01234-567
                 </span>
               </div>
+              */}
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/20 mt-12 pt-8">
+        <div className="border-t border-primary-foreground/20 mt-16 pt-10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm opacity-75">
-              © 2024 IEEE Computer Society. Todos os direitos reservados.
+              © 2025 IEEE Computer Society. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-sm opacity-75 hover:opacity-100 transition-opacity">
+              <a href="https://privacy.ieee.org/policies" className="text-sm opacity-75 hover:opacity-100 transition-opacity">
                 Política de Privacidade
-              </a>
-              <a href="#" className="text-sm opacity-75 hover:opacity-100 transition-opacity">
-                Termos de Uso
-              </a>
-              <a href="#" className="text-sm opacity-75 hover:opacity-100 transition-opacity">
-                Cookies
               </a>
             </div>
           </div>
