@@ -16,17 +16,16 @@ const Header = () => {
     { href: "#contact", label: "Contato" },
   ];
 
-const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-  e.preventDefault();
-  setMenuOpen(false);
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setMenuOpen(false);
 
-  const element = document.querySelector(href);
-  if (!element) return;
+    const element = document.querySelector(href);
+    if (!element) return;
 
-  const isMobile = window.innerWidth < 768; // breakpoint md
+    const header = document.querySelector("header");
+    const headerHeight = header ? header.offsetHeight : 0; // altura real do header
 
-  if (isMobile) {
-    const headerHeight = 400; // altura do header mobile
     const elementTop = element.getBoundingClientRect().top + window.pageYOffset;
     const scrollToPosition = elementTop - headerHeight;
 
@@ -34,17 +33,15 @@ const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) =
       top: scrollToPosition,
       behavior: "smooth",
     });
-  } else {
-    // desktop só scrollIntoView mesmo
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
+  };
+
 
 
   return (
-    <header className="sticky top-0 z-50 bg-primary/80 backdrop-blur text-primary-foreground shadow-md transition-all duration-300">
+    <header className="sticky top-0 z-50 bg-primary-foreground text-primary shadow-md transition-all duration-300">
+
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <a
@@ -52,10 +49,16 @@ const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) =
               className="flex items-center space-x-3 hover:opacity-90 transition-opacity cursor-pointer"
               onClick={() => window.location.reload()}
             >
-              <div className="w-8 h-8 bg-primary-foreground rounded flex items-center justify-center">
-                <span className="text-primary font-bold text-sm">IEEE</span>
+              <div className="inline-block m-[1.2rem]">
+                <img
+                  src="/logoieee/IEEE-CS-Logo-Ext.png"
+                  alt="Logo IEEE Computer Society"
+                  className="h-16 w-auto"
+                />
               </div>
-              <span className="font-semibold text-lg">Computer Society</span>
+
+
+
             </a>
           </div>
 
@@ -90,12 +93,12 @@ const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) =
 
       {/* Menu mobile dropdown */}
       {menuOpen && (
-        <nav className="md:hidden bg-primary/90 backdrop-blur p-4 flex flex-col space-y-4">
+        <nav className="md:hidden bg-primary-foreground text-primary p-4 flex flex-col space-y-4 divide-y divide-gray-300">
           {links.map(({ href, label }) => (
             <a
               key={href}
               href={href}
-              className="hover:text-accent-foreground transition-colors cursor-pointer"
+              className="py-3 hover:text-accent transition-colors"
               onClick={(e) => handleLinkClick(e, href)}
             >
               {label}
@@ -103,6 +106,7 @@ const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) =
           ))}
         </nav>
       )}
+
     </header>
   );
 };

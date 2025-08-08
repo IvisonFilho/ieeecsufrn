@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import { Mail, Phone, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -6,26 +6,21 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12">
-          
+
           {/* Company Info */}
-          <div className="space-y-6">
-            <div className="flex items-center space-x-2">
-              <a 
-                href="/" 
-                className="flex items-center space-x-2 hover:opacity-90 transition-opacity cursor-pointer"
-                onClick={() => window.location.reload()}
-              >
-                <div className="w-8 h-8 bg-primary-foreground rounded flex items-center justify-center">
-                  <span className="text-primary font-bold text-sm">IEEE</span>
-                </div>
-                <span className="font-semibold text-lg">Computer Society</span>
-              </a>
-            </div>
-            <p className="text-sm opacity-90">
-              Conectando profissionais de tecnologia e promovendo o avanço da computação 
-              através de educação, networking e inovação.
-            </p>
-            
+          <div className="flex flex-col items-center space-y-6">
+            <a 
+              href="/" 
+              className="inline-block m-[1.2rem] hover:opacity-90 transition-opacity cursor-pointer"
+              onClick={() => window.location.reload()}
+            >
+              <img
+                src="/logoieee/IEEE-CS-Logo-Ext.png"
+                alt="Logo IEEE Computer Society"
+                className="h-16 w-auto"
+              />
+            </a>
+
             {/* Social Media */}
             <div className="flex space-x-6 pt-4">
               <a 
@@ -71,92 +66,29 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="font-semibold text-lg">Links Rápidos</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a 
-                  href="#about" 
-                  className="opacity-90 hover:opacity-100 transition-opacity cursor-pointer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Sobre Nós
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#benefits" 
-                  className="opacity-90 hover:opacity-100 transition-opacity cursor-pointer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.querySelector('#benefits')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Benefícios
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#team" 
-                  className="opacity-90 hover:opacity-100 transition-opacity cursor-pointer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.querySelector('#team')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Nossa Equipe
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#events" 
-                  className="opacity-90 hover:opacity-100 transition-opacity cursor-pointer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.querySelector('#events')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Eventos
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#activities" 
-                  className="opacity-90 hover:opacity-100 transition-opacity cursor-pointer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.querySelector('#activities')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Atividades
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#join" 
-                  className="opacity-90 hover:opacity-100 transition-opacity cursor-pointer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.querySelector('#join')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Junte-se a nós
-                </a>
-              </li>
+              {[
+                { href: '#about', label: 'Sobre Nós' },
+                { href: '#benefits', label: 'Benefícios' },
+                { href: '#team', label: 'Nossa Equipe' },
+                { href: '#events', label: 'Eventos' },
+                { href: '#activities', label: 'Atividades' },
+                { href: '#join', label: 'Junte-se a nós' }
+              ].map(({ href, label }) => (
+                <li key={href}>
+                  <a
+                    href={href}
+                    className="opacity-90 hover:opacity-100 transition-opacity cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
-
-          {/* Services 
-          <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Serviços</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Workshops</a></li>
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Certificações</a></li>
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Mentoria</a></li>
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Networking</a></li>
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Publicações</a></li>
-            </ul>
-          </div>*/}
 
           {/* Contact */}
           <div className="space-y-6 ">
@@ -180,14 +112,14 @@ const Footer = () => {
                   (714) 821-8380
                 </a>
               </div>
-              {/*
+              {/* 
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 opacity-75 mt-0.5" />
                 <span className="opacity-90">
                   Rua da Tecnologia, 123<br />
                   São Paulo, SP - 01234-567
                 </span>
-              </div>
+              </div> 
               */}
             </div>
           </div>

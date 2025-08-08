@@ -9,7 +9,7 @@
           {/* Texto principal */}
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-              IEEE Computer Society
+              IEEE Computer Society UFRN
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 opacity-90 leading-relaxed">
               Conectamos estudantes e profissionais em torno da computação, com projetos, eventos e aprendizado real.
