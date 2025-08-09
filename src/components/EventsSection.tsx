@@ -8,51 +8,141 @@ import { useToast } from "@/hooks/use-toast";
 const events = [
   {
     id: 1,
-    title: "Workshop de Inovação",
-    speaker: "Ana",
-    date: "2024-02-09",
-    time: "8:00 am",
-    location: "Auditório",
-    attendees: 45,
+    title: "I Reunião Cogestão do Ramo Estudantil IEEE UFRN 2025",
+    speaker: "N/A",
+    date: "2025-01-11",
+    time: "09:00 am",
+    location: "UFRN",
+    attendees: 30,
     image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=200&fit=crop"
   },
   {
     id: 2,
-    title: "Palestra sobre IA",
-    speaker: "Carlos",
-    date: "2024-02-09", 
-    time: "9:00 am",
-    location: "Sala 202",
-    attendees: 120,
+    title: "II Reunião Cogestão do Ramo Estudantil IEEE UFRN 2025",
+    speaker: "N/A",
+    date: "2025-01-18",
+    time: "09:00 am",
+    location: "UFRN",
+    attendees: 35,
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop"
   },
   {
     id: 3,
-    title: "Mesa Redonda",
-    speaker: "Fernanda",
-    date: "2024-02-10",
+    title: "1ª Reunião Geral do IEEE CS UFRN de 2025",
+    speaker: "N/A",
+    date: "2025-01-21",
     time: "10:00 am",
-    location: "Auditório",
-    attendees: 200,
+    location: "Auditório Central",
+    attendees: 50,
     image: "https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?w=400&h=200&fit=crop"
   },
   {
     id: 4,
-    title: "Networking Tech",
-    speaker: "Roberto",
-    date: "2024-02-11",
+    title: "2ª Reunião Geral do IEEE CS UFRN de 2025",
+    speaker: "N/A",
+    date: "2025-02-27",
+    time: "10:00 am",
+    location: "Auditório Central",
+    attendees: 50,
+    image: "https://images.unsplash.com/photo-1559223607-b4d0555ae227?w=400&h=200&fit=crop"
+  },
+  {
+    id: 5,
+    title: "3ª Reunião Geral do IEEE CS UFRN de 2025",
+    speaker: "N/A",
+    date: "2025-03-28",
+    time: "10:00 am",
+    location: "Auditório Central",
+    attendees: 55,
+    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=200&fit=crop"
+  },
+  {
+    id: 6,
+    title: "IEEE CS GAC - Area 4 Meeting",
+    speaker: "N/A",
+    date: "2025-04-05",
+    time: "09:00 am",
+    location: "Sala 101",
+    attendees: 40,
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop"
+  },
+  {
+    id: 7,
+    title: "Coffee Tech 2025 - Introdução Realidade Estendida",
+    speaker: "N/A",
+    date: "2025-04-23",
     time: "14:00 pm",
-    location: "Sala de Eventos",
+    location: "Laboratório XR",
+    attendees: 60,
+    image: "https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?w=400&h=200&fit=crop"
+  },
+  {
+    id: 8,
+    title: "4ª Reunião do IEEE CS UFRN de 2025",
+    speaker: "N/A",
+    date: "2025-04-30",
+    time: "10:00 am",
+    location: "Auditório Principal",
+    attendees: 70,
+    image: "https://images.unsplash.com/photo-1559223607-b4d0555ae227?w=400&h=200&fit=crop"
+  },
+  {
+    id: 9,
+    title: "5ª Reunião do IEEE CS UFRN de 2025",
+    speaker: "N/A",
+    date: "2025-05-23",
+    time: "10:00 am",
+    location: "Auditório Principal",
+    attendees: 75,
+    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=200&fit=crop"
+  },
+  {
+    id: 10,
+    title: "IV Reunião das Diretorias Ramo IEEE UFRN",
+    speaker: "N/A",
+    date: "2025-05-23",
+    time: "09:00 am",
+    location: "Sala de Reuniões",
+    attendees: 25,
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop"
+  },
+  {
+    id: 11,
+    title: "Coffee Tech 2025 - Teste de Software em Micro-Empresas",
+    speaker: "N/A",
+    date: "2025-05-29",
+    time: "14:00 pm",
+    location: "Laboratório de Software",
+    attendees: 40,
+    image: "https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?w=400&h=200&fit=crop"
+  },
+  {
+    id: 12,
+    title: "6ª Reunião do IEEE CS UFRN de 2025",
+    speaker: "N/A",
+    date: "2025-06-16",
+    time: "10:00 am",
+    location: "Auditório Principal",
     attendees: 80,
     image: "https://images.unsplash.com/photo-1559223607-b4d0555ae227?w=400&h=200&fit=crop"
   }
 ];
 
 const dateFilters = [
-  { label: "Sex 09 Fev", value: "2024-02-09" },
-  { label: "Sáb 10 Fev", value: "2024-02-10" },
-  { label: "Dom 11 Fev", value: "2024-02-11" }
+  { label: "Jan 11", value: "2025-01-11" },
+  { label: "Jan 18", value: "2025-01-18" },
+  { label: "Jan 21", value: "2025-01-21" },
+  { label: "Feb 27", value: "2025-02-27" },
+  { label: "Mar 28", value: "2025-03-28" },
+  { label: "Apr 05", value: "2025-04-05" },
+  { label: "Apr 23", value: "2025-04-23" },
+  { label: "Apr 30", value: "2025-04-30" },
+  { label: "May 23", value: "2025-05-23" },
+  { label: "May 29", value: "2025-05-29" },
+  { label: "Jun 16", value: "2025-06-16" },
+  { label: "Todos", value: "all" }
 ];
+
 
 const EventsSection = () => {
   const [selectedDate, setSelectedDate] = useState<string>("all");
@@ -78,7 +168,7 @@ const EventsSection = () => {
           </div>
           <h2 className="text-4xl font-bold text-foreground mb-4">Calendário</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Confira nossos eventos passados e futuros, e participe das nossas atividades enriquecedoras.
+            Confira nossos eventos passados.
           </p>
         </div>
 
@@ -131,7 +221,7 @@ const EventsSection = () => {
                   <h3 className="text-xl font-bold text-foreground mb-1">
                     {event.title}
                   </h3>
-                  <p className="text-muted-foreground mb-2">{event.speaker}</p>
+                  {/*<p className="text-muted-foreground mb-2">{event.speaker}</p>*/}
                   <div className="flex items-center justify-center md:justify-start text-muted-foreground text-sm">
                     <MapPin className="h-4 w-4 mr-1" />
                     <span>{event.location}</span>
@@ -173,26 +263,15 @@ const EventsSection = () => {
                             <MapPin className="h-4 w-4 mr-2" />
                             <span>{event.location}</span>
                           </div>
-                          <div className="flex items-center text-muted-foreground">
+                          {/*<div className="flex items-center text-muted-foreground">
                             <Users className="h-4 w-4 mr-2" />
                             <span>{event.attendees} participantes</span>
-                          </div>
+                          </div>*/}
                         </div>
-                        <div>
+                        {/*<div>
                           <h4 className="font-semibold mb-2">Palestrante</h4>
                           <p className="text-muted-foreground">{event.speaker}</p>
-                        </div>
-                        <Button 
-                          className="w-full"
-                          onClick={() => {
-                            toast({
-                              title: "Inscrição realizada",
-                              description: `Você se inscreveu para: ${event.title}`,
-                            });
-                          }}
-                        >
-                          Inscrever-se
-                        </Button>
+                        </div>*/}
                       </div>
                     </DialogContent>
                   </Dialog>
@@ -207,22 +286,6 @@ const EventsSection = () => {
             <p className="text-muted-foreground">Nenhum evento encontrado para a data selecionada.</p>
           </div>
         )}
-
-        <div className="text-center mt-8">
-          <Button 
-            variant="outline" 
-            size="lg"
-            onClick={() => {
-              toast({
-                title: "Calendário Completo",
-                description: "Redirecionando para o calendário completo de eventos...",
-              });
-              // Aqui você pode adicionar a navegação para uma página de eventos completa
-            }}
-          >
-            Ver Todos os Eventos
-          </Button>
-        </div>
       </div>
     </section>
   );
