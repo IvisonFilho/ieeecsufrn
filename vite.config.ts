@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: "/ieeecsufrn/",
   plugins: [
     react(),
     mode === 'development' &&
@@ -19,5 +20,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/ieeecsufrn",
 }));
