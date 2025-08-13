@@ -38,39 +38,31 @@ export function MembershipChart() {
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart
                         data={data}
-                        margin={{ top: 20, right: 20, bottom: 20, left: 20 }} // <- evita corte dos pontos
+                        margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
                     >
+                        {/* Eixo X com meses */}
                         <XAxis
                             dataKey="mes"
                             axisLine={false}
                             tickLine={false}
                             tick={{ fill: "#aaa", fontSize: 12 }}
                         />
-                        <YAxis
-                            allowDecimals={false}
-                            axisLine={false}
-                            tickLine={false}
-                            tick={{ fill: "#aaa", fontSize: 12 }}
-                        />
-                        <Tooltip
-                            contentStyle={{
-                                backgroundColor: "#1c1c1e",
-                                border: "none",
-                                borderRadius: "8px",
-                            }}
-                            labelStyle={{ color: "#fff" }}
-                            itemStyle={{ color: "#fff" }}
-                        />
+
+                        {/* Esconde completamente o eixo Y */}
+                        <YAxis hide />
+
+                        {/* Linha sem pontos e sem tooltip */}
                         <Line
                             type="monotone"
                             dataKey="membros"
                             stroke="#ffffff"
                             strokeWidth={3}
-                            dot={{ r: 5, fill: "#ffffff", stroke: "#ffffff" }}
-                            activeDot={{ r: 6 }}
+                            dot={false}        // 🔹 remove as bolinhas
+                            activeDot={false}  // 🔹 remove destaque no hover
                         />
                     </LineChart>
                 </ResponsiveContainer>
+
 
             </div>
         </div>
