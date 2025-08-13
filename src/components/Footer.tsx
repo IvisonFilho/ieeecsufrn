@@ -97,19 +97,10 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 opacity-75" />
                 <a 
-                  href="mailto:contato@ieeecomputersociety.org"
+                  href="mailto:cs.ieee.ufrn@gmail.com"
                   className="opacity-90 hover:opacity-100 transition-opacity"
                 >
-                  contato@ieeecomputersociety.org
-                </a>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 opacity-75" />
-                <a 
-                  href="tel:+5511999999999"
-                  className="opacity-90 hover:opacity-100 transition-opacity"
-                >
-                  (714) 821-8380
+                  cs.ieee.ufrn@gmail.com
                 </a>
               </div>
               {/* 

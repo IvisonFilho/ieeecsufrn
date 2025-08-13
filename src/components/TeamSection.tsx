@@ -4,41 +4,41 @@ import { Linkedin, Mail } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Dr. Rafael Sol",
+    name: "Rafael Sol",
     role: "Presidente",
-    description: "Doutora em Ciência da Computação com mais de 15 anos de experiência em IA e Machine Learning.",
+    description: "Bacharel em Ciências e Tecnologia",
     image: "/imageequipe/IEEE-1-2.png",
     linkedin: "https://www.linkedin.com/in/rafael-sol-dos-santos/",
     email: "rafael.sol@example.com"
   },
   {
-    name: "Prof. Sebastião Lopes",
+    name: "Sebastião Lopes",
     role: "Vice-Presidente",
-    description: "Professor de Engenharia de Software e especialista em desenvolvimento de sistemas distribuídos.",
+    description: "Bacharelando em Tecnologia da Informação",
     image: "./imageequipe/IEEE-2.png",
     linkedin: "https://www.linkedin.com/in/sebastiaofellipe/",
     email: "sebastiao.lopes@example.com"
   },
   {
-    name: "Dr. Cipriano José",
+    name: "Cipriano José",
     role: "Secretário",
-    description: "Gerente de Projetos com expertise em organização de eventos técnicos e workshops educacionais.",
+    description: "Bacharelando em Tecnologia da Informação",
     image: "./imageequipe/IEEE-3.png",
     linkedin: "https://www.linkedin.com/in/victorbxavier/",
     email: "cipriano.jose@example.com"
   },
   {
-    name: "Dr. Victor Xavier",
+    name: "Victor Xavier",
     role: "Tesoureiro",
-    description: "Pesquisador em Computação Quântica e professor universitário com múltiplas publicações.",
+    description: "Bacharelando em Ciência da Computação",
     image: "./imageequipe/IEEE-4.png",
     linkedin: "https://www.linkedin.com/in/victorbxavier/",
     email: "victor.xavier@example.com"
   },
   {
-    name:"Dra. Rafaela Santos",
+    name:"Rafaela Santos",
     role: "Webmaster",
-    description:"Pesquisadora em webdesign e mestre em computação quântica",
+    description:" Bacharelanda em Ciências e Tecnologia",
     image:"./imageequipe/IEEE-5.png",
     linkedin:"https://www.linkedin.com/in/rafaela-marques-82515722b/",
     email:"rafaela.santos@example.com"
