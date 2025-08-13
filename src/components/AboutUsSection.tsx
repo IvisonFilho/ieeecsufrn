@@ -27,7 +27,7 @@ const AboutUsSection = () => {
                 Sobre Nós
               </span>
               <h2 className="text-4xl font-bold text-foreground">
-                Somos a IEEE Computer Society UFRN
+                Somos o IEEE Computer Society UFRN
               </h2>
               <p className="text-lg text-muted-foreground">
                 Um grupo de estudantes apaixonados por tecnologia, inovação e impacto social.
@@ -36,7 +36,7 @@ const AboutUsSection = () => {
 
             {/* Resumo rápido */}
             <p className="text-muted-foreground leading-relaxed">
-              Organizamos eventos, minicursos e projetos que conectam alunos, mercado e inovação tecnológica — formando os líderes da computação de amanhã.
+              Organizamos eventos, atividades e projetos que conectam alunos, mercado e inovação tecnológica — formando os líderes da computação de amanhã.
             </p>
 
             {/* Lista de benefícios */}
@@ -47,7 +47,7 @@ const AboutUsSection = () => {
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                <span>Conecte-se com profissionais e empresas da área</span>
+                <span>Conecte-se com profissionais e empresas da área de computação</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
@@ -58,11 +58,13 @@ const AboutUsSection = () => {
             {/* Texto completo opcional */}
             {showFullText && (
               <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-                A Computer Society UFRN (CS UFRN) é o capítulo estudantil da IEEE Computer Society vinculado ao ramo IEEE da Universidade Federal do Rio Grande do Norte. Formada por estudantes voluntários, a CS UFRN atua no desenvolvimento de atividades educacionais, técnicas e sociais voltadas à área de computação, com o objetivo de gerar impacto positivo tanto na comunidade acadêmica quanto na sociedade em geral.
+                O IEEE Computer Society UFRN é o Capítulo Estudantil representante da IEEE Computer Society, vinculado ao Ramo Estudantil IEEE UFRN, da Universidade Federal do Rio Grande do Norte. 
+                <br /><br />
+                Formado por estudantes voluntários, o IEEE CS UFRN atua no desenvolvimento de atividades técnicas, educacionais e sociais voltadas à área de computação, com o objetivo de gerar impacto positivo tanto na comunidade acadêmica quanto na sociedade em geral.
                 <br /><br />
                 Entre as iniciativas promovidas pelo grupo estão palestras, workshops, minicursos e eventos temáticos, sempre com foco no compartilhamento de conhecimento, na capacitação de estudantes e na aproximação entre universidade, mercado e inovação tecnológica.
                 <br /><br />
-                A CS UFRN é um espaço de aprendizado, colaboração e crescimento profissional, que incentiva o protagonismo estudantil e o desenvolvimento de competências técnicas e interpessoais essenciais para a formação de futuros líderes da tecnologia.
+                 O IEEE CS UFRN é um espaço de aprendizado, colaboração e crescimento profissional, que incentiva o protagonismo estudantil e o desenvolvimento de competências técnicas e interpessoais essenciais para a formação de futuros líderes da tecnologia.
               </p>
             )}
 
