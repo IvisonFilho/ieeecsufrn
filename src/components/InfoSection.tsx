@@ -46,7 +46,7 @@ const InfoSection = () => {
               experientes, pesquisadores e líderes de empresas. Participe de eventos
               exclusivos, grupos de interesse especial e fóruns de discussão onde você
               pode compartilhar conhecimento e criar conexões valiosas. Segue o Crescimento de 
-              membros nos últimos meses, refletindo o aumento do interesse e participação na IEEE Computer Society:
+              membros nos últimos meses, refletindo o aumento do interesse e participação no IEEE Computer Society:
             </p>
 
             <div className="mt-8 flex flex-col items-center bg-primary-foreground/20 rounded-xl p-8">

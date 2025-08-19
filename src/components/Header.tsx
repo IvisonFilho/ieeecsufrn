@@ -40,8 +40,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-primary-foreground text-primary shadow-md transition-all duration-300">
 
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between">
+      <div className="container mx-auto px-4 ">
+        <div className="flex items-center justify-between ">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <a
@@ -51,9 +51,9 @@ const Header = () => {
             >
               <div className="inline-block m-[1.2rem]">
                 <img
-                  src="/logoieee/IEEE-CS-Logo-Ext.png"
+                  src="/logoieee/IEEE-CS-UFRN-Horz.png"
                   alt="Logo IEEE Computer Society"
-                  className="h-16 w-auto"
+                  className="h-10 w-auto"
                 />
               </div>
 
@@ -62,13 +62,13 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Navbar desktop */}
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* Navbar desktop hover:bg-yellow-200 */}
+          <nav className="hidden md:flex items-center space-x-8 ">
             {links.map(({ href, label }) => (
               <a
                 key={href}
                 href={href}
-                className="hover:text-accent-foreground transition-colors cursor-pointer"
+                className="hover:text-accent-foreground hover:font-bold transition-colors cursor-pointer"
                 onClick={(e) => handleLinkClick(e, href)}
               >
                 {label}

@@ -58,16 +58,6 @@
               alt="Imagem representando tecnologia e comunidade"
               className="w-full max-w-xs sm:max-w-md mx-auto"
             />
-            <div className="text-xs opacity-60 mt-2 text-center">
-              <a
-                href="https://storyset.com/people"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-600"
-              >
-                People illustrations by Storyset
-              </a>
-            </div>
           </div>
         </div>
       </section>

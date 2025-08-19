@@ -31,7 +31,7 @@ export function MembershipChart() {
                 Crescimento de Membros
             </h4>
             <p className="text-sm text-gray-400 mb-4">
-                Evolução das membresias na IEEE CS UFRN de ago/24 a jul/25
+                Evolução das membresias no IEEE CS UFRN de ago/24 a jul/25
             </p>
 
             <div className="h-[300px] md:h-[400px]">

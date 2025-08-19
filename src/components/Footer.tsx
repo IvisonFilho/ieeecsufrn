@@ -15,7 +15,7 @@ const Footer = () => {
               onClick={() => window.location.reload()}
             >
               <img
-                src="/logoieee/IEEE-CS-Logo-Ext.png"
+                src="/logoieee/IEEE-CS-Logo-big.png"
                 alt="Logo IEEE Computer Society"
                 className="h-16 w-auto"
               />
